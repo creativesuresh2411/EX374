@@ -1,0 +1,12 @@
+myusers:
+  - name: suresh
+    uid: 1002
+    first: sugandham
+    middle:  suresh
+    last: kumar
+
+  - name: venky
+    uid: 1003
+    first: sugandham1
+    middle:  venkatesth
+    last: venky

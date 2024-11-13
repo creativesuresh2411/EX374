@@ -1,0 +1,9 @@
+myusers:
+  - name: suresh
+    group: manager
+
+  - name: venkatesh
+    group: engineer
+
+  - name: kumar
+    group: kumar

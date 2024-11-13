@@ -1,0 +1,11 @@
+---
+- hosts: worker2
+  vars:
+    content: "hello"
+    file: suresh_ansible.txt
+    directory: /tmp
+  tasks:
+    - name: copy content
+      copy:
+        content: "{{ content }}"
+        dest: "{{ directory }}/{{ file }}"

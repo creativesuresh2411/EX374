@@ -1,0 +1,17 @@
+- name: apache service
+  hosts: worker1
+  gather_facts: false
+  tasks:
+    - name: alpha task
+      copy:
+        content: "alpha task"
+        dest: /var/www/html/index.html
+      tags: ['nenver','alpha']
+
+    - name: beta task
+      copy:
+        content: "beta task"
+        dest: /var/www/html/index.html
+      tags: ['never','beta']
+
+

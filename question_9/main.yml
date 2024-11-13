@@ -1,0 +1,9 @@
+---
+- hosts: worker1
+  become: true
+  tasks:
+    - name: add the content
+      copy:
+        content: "the sun comes up and then it goes down"
+        dest: /etc/motd.d/banner
+

@@ -1,0 +1,15 @@
+---
+- hosts: worker1
+  become: true
+  tasks:
+    - name: adding content
+      copy:
+        content: "hello"
+        dest: /tmp/practice
+      notify: restart_apache
+
+  handlers:
+    - name: restart_apache
+      service:
+        name: httpd
+        state: restarted

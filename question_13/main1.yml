@@ -1,0 +1,15 @@
+- name: tasks
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: task_alpha
+    copy:
+      content: "alpha"
+      dest: /var/www/html/index.html
+    tags: ['never', 'alpha']
+
+  - name: task_beta
+    copy:
+      content: "beta"
+      dest: /var/www/html/index.html
+    tags: ['never', 'beta']

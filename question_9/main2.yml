@@ -1,0 +1,9 @@
+---
+- hosts: web
+  become: true
+  tasks:
+  - name: banner content
+    copy:
+      content: "The sun comes up and then it goes down"
+      dest: /etc/motd.d/banner
+

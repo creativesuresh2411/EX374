@@ -7,3 +7,8 @@ myusers:
 
   - name: kumar
     group: kumar
+
+  - name: bob
+    group: developer
+
+  

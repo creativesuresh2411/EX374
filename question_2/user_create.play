@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: true
+  - vars_files:
+       - users.yaml
+  tasks:
+  - name: user add
+
+ 

@@ -1,0 +1,12 @@
+---
+- hosts: testing
+  become: true
+  vars:
+    content: "testing question12"
+    file: question12-new.txt
+    directory: /tmp
+  tasks:
+  - name: create new file
+    copy:
+      content: "{{ content }}"
+      dest: "{{ directory }}/{{ file }}"

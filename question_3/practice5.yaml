@@ -1,0 +1,16 @@
+---
+- hosts: worker1
+  become: true
+  tasks:
+  - name: question3
+    copy:
+      content: "question3"
+      dest: /var/www/html/index.html
+    notify: apache_httpd
+
+  handlers:
+  - name: apache_httpd
+    service:
+      name: httpd
+      state: restarted
+

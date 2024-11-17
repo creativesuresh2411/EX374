@@ -11,4 +11,5 @@ myusers:
   - name: bob
     group: developer
 
-  
+  - name: king
+    group: developer  

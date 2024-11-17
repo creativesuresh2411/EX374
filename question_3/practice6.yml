@@ -1,0 +1,15 @@
+---
+- hosts: worker1
+  become: true
+  tasks:
+  - name: copy content
+    copy:
+      content: "web server practice 6"
+      dest: /var/www/html/index.html
+    notify: apache_restart
+
+  handlers:
+    - name: apache_restart
+      service:
+        name: httpd
+        state: restarted

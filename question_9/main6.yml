@@ -1,0 +1,9 @@
+---
+- hosts: worker1
+  become: true
+  tasks:
+  - name: content add
+    copy:
+      content: "ssssssss"
+      dest: /etc/motd.d/banner
+

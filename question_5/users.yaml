@@ -1,12 +1,12 @@
 myusers:
-  - name: suresh
-    uid: 1002
+  - name: suresh2
+    uid: 1006
     first: sugandham
     middle:  suresh
     last: kumar
 
-  - name: venky
-    uid: 1003
+  - name: venky2
+    uid: 1007
     first: sugandham1
     middle:  venkatesth
     last: venky

@@ -1,0 +1,8 @@
+---
+- name: qustion11
+  hosts: testing
+  become: true
+  collections:
+    - rhel.user
+  roles:
+    - name: newuser
